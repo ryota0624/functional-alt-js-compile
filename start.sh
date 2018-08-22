@@ -1,13 +1,22 @@
 # clean
-rm -rf elm/elm-stuff ps/.pulp-cache ps/output reason/src/*.js ts/src/*.js
+rm -rf elm/elm-stuff elm-next/elm-stuff ps/.pulp-cache ps/output reason/src/*.js ts/src/*.js
 
-# elm
+# elm 0.18
 cd elm
 
 echo "--- start elm compile ---"
 time elm-make --yes src/Main.elm
 cd ..
 echo "--- finish elm compile ---"
+echo ""
+
+# elm 0.19
+cd elm-next
+
+echo "--- start elm 0.19 compile ---"
+time /usr/local/bin/elm make src/Main.elm
+cd ..
+echo "--- finish elm 0.19 compile ---"
 echo ""
 
 # ps

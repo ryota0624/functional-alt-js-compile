@@ -3,6 +3,11 @@ cd elm
 npm install
 node gen.js
 
+# elm 0.19
+cd elm-next
+npm install
+node gen.js
+
 cd ..
 
 # ps

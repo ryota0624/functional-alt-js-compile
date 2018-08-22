@@ -7,11 +7,22 @@
 
 
 ## 結果
---- start elm compile ---
+--- start elm 0.18 compile ---
 real	0m10.163s
 user	0m17.712s
 sys	0m8.988s
---- finish elm compile ---
+--- finish elm 0.18 compile ---
+
+--- start elm 0.19 compile ---
+Dependencies loaded from local cache.
+Dependencies ready!
+Success! Compiled 201 modules.
+
+real	0m1.304s
+user	0m0.270s
+sys	0m0.160s
+--- finish elm 0.19 compile ---
+
 
 --- start ps compile ---
 real	0m1.948s
